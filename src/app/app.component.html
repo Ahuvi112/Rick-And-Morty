@@ -1,0 +1,10 @@
+<div class="marginNav">
+    <nav mat-tab-nav-bar backgroundColor="primary" [tabPanel]="tabPanel" class="navClass">
+        <a mat-tab-link label="Character" (click)="navigateForm('character/page/1')" color="primary">Character</a>
+        <a mat-tab-link label="Loation" (click)="navigateForm('location/page/1')" color="primary">Location</a>
+        <a mat-tab-link label="Episode" (click)="navigateForm('episode/page/1')" color="primary">Episode</a>
+
+    </nav>
+</div>
+<mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>
+<router-outlet></router-outlet>

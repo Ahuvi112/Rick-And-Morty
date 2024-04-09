@@ -1,0 +1,20 @@
+<div class="character-detail">
+  <img [src]="character?.image" alt="Character Image">
+  <div class="character-details">
+    <h3 class="title">{{ character?.name }}</h3>
+    <p class="info">Status: {{ character?.status }}</p>
+    <p class="info">Species: {{ character?.species }}</p>
+    <p class="info">Location: {{ character?.location?.name }}</p>
+  </div>
+
+  <div class="example-button-container" *ngIf="showButtons">
+    <button mat-fab color="primary" aria-label="Example icon button with a delete icon" (click)="openDialog()">
+      <mat-icon>delete</mat-icon>
+    </button>
+    <button mat-fab color="primary" aria-label="Example icon button with a edit icon" (click)="navigateForm()">
+      <mat-icon>edit</mat-icon>
+    </button>
+  </div>
+
+</div>
+<!-- <button mat-raised-button (click)="openDialog()"><mat-icon>delete</mat-icon></button> -->

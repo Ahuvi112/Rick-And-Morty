@@ -1,0 +1,17 @@
+<div *ngIf="locations" class="character-list">
+    <app-location-detail *ngFor="let location of locations" [location]="location" class="character-detail">
+    </app-location-detail>
+</div>
+
+<footer class="footer">
+    <button (click)="previousPage()" mat-icon-button aria-label="Example icon button with a vertical three dot icon"
+        [disabled]="currentPage === 1">
+        <mat-icon>keyboard_arrow_left</mat-icon>
+    </button>
+    <span>Page: {{ currentPage }} / 7 </span>
+    <button (click)="nextPage()" mat-icon-button aria-label="Example icon button with a vertical three dot icon"
+        [disabled]="currentPage === 7">
+        <mat-icon>keyboard_arrow_right</mat-icon>
+    </button>
+</footer>
+<div class="margin-footer"></div>

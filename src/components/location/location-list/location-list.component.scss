@@ -1,0 +1,32 @@
+.character-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.character-list .character-detail {
+    flex: 0 0 calc(10% - 10px);
+    margin: 5px;
+}
+
+.container {
+    display: flex;
+    margin: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #3f51b5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  .margin-footer{
+    height: 40px;
+  }

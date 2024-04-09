@@ -1,0 +1,12 @@
+.character-list .character-detail {
+    flex: 0 0 calc(15% - 10px);
+    /* Adjusted margin to 10px */
+    margin: 5px;
+    /* Reduced margin to 5px */
+}
+
+.character-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

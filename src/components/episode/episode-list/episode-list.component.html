@@ -1,0 +1,18 @@
+<div *ngIf="episodes" class="character-list">
+    <app-episode-detail *ngFor="let episode of episodes" [episode]="episode" class="character-detail">
+    </app-episode-detail> 
+</div>
+
+<footer class="footer">
+    <button (click)="previousPage()" mat-icon-button aria-label="Example icon button with a vertical three dot icon"
+        [disabled]="currentPage === 1">
+        <mat-icon>keyboard_arrow_left</mat-icon>
+    </button>
+    <span>Page: {{ currentPage }} / 3 </span>
+    <button (click)="nextPage()" mat-icon-button aria-label="Example icon button with a vertical three dot icon"
+        [disabled]="currentPage === 3">
+        <mat-icon>keyboard_arrow_right</mat-icon>
+    </button>
+</footer>
+<div class="margin-footer"></div>
+<!-- <div class="footer">kkkkk</div> -->

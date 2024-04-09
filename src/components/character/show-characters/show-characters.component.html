@@ -1,0 +1,11 @@
+<h2 mat-dialog-title>Show Characters</h2>
+<mat-dialog-content class="mat-typography">
+  <div *ngIf="characters" class="character-list">
+    <app-character-detail *ngFor="let character of characters" [character]="character" class="character-detail"
+      [showButtons]="false">
+    </app-character-detail>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>close</button>
+</mat-dialog-actions>

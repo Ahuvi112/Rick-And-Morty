@@ -1,0 +1,51 @@
+<form [formGroup]="characterForm" (ngSubmit)="onSubmit()" class="character-form">
+ <h1 class="label"><p *ngIf="isUpdate">Edit {{characterToUpdate?.name}}</p></h1> 
+ <h1 class="label"> <p *ngIf="!isUpdate">Add New Character</p></h1>
+  <div>
+    <mat-form-field appearance="fill">
+      <mat-label>Name</mat-label>
+      <input type="text" matInput formControlName="name" required>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Status</mat-label>
+      <input type="text" matInput formControlName="status">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Species</mat-label>
+      <input type="text" matInput formControlName="species">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Type</mat-label>
+      <input type="text" matInput formControlName="type">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Gender</mat-label>
+      <input type="text" matInput formControlName="gender">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Origin</mat-label>
+      <input type="text" matInput formControlName="origin">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Location</mat-label>
+      <input type="text" matInput formControlName="location">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Image</mat-label>
+      <input type="text" matInput formControlName="image">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Episode</mat-label>
+      <input type="text" matInput formControlName="episode">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>URL</mat-label>
+      <input type="text" matInput formControlName="url">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Created</mat-label>
+      <input type="text" matInput formControlName="created">
+    </mat-form-field>
+  </div>
+  <button mat-raised-button color="primary" type="submit">Save</button>
+</form>

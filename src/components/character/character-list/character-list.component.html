@@ -1,0 +1,24 @@
+<div class="container">
+    <button mat-fab extended color="primary" (click)="navigateForm()">
+        <mat-icon>add</mat-icon>
+        Add Character
+    </button>
+</div>
+
+<div *ngIf="characters" class="character-list">
+    <app-character-detail *ngFor="let character of characters" [character]="character" class="character-detail">
+    </app-character-detail>
+</div>
+
+<div class="marginFooter"></div>
+<div class="footer">
+    <button (click)="previousPage()" mat-icon-button aria-label="Example icon button with a vertical three dot icon"
+        [disabled]="currentPage === 1">
+        <mat-icon>keyboard_arrow_left</mat-icon>
+    </button>
+    <span>Page: {{ currentPage }} / 43 </span>
+    <button (click)="nextPage()" mat-icon-button aria-label="Example icon button with a vertical three dot icon"
+        [disabled]="currentPage === 43">
+        <mat-icon>keyboard_arrow_right</mat-icon>
+    </button>
+</div>

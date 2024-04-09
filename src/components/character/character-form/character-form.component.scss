@@ -1,0 +1,61 @@
+// .character-form-container {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+//     background-color: #f5f5f5;
+//     /* רקע אפור בהיר */
+// }
+
+
+.character-form {
+    background-color: white;
+    padding: 100px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    /* צל של תיבת האינפוט */
+    animation: slide-up 0.5s ease;
+    /* אנימציה של התעלמות על תחילת הדף */
+    max-width: 400px;
+    /* רוחב מקסימלי */
+    margin: 50px auto;
+    /* מרכז את הפורמ על המסך */
+}
+
+.label {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    /* צבע טקסט */
+    text-align: center;
+    margin-bottom: 20px;
+    /* מרווח מתחת לטקסט */
+}
+
+// @keyframes slide-up {
+//     from {
+//         transform: translateY(50px);
+//         opacity: 0;
+//     }
+
+//     to {
+//         transform: translateY(0);
+//         opacity: 1;
+//     }
+// }
+
+// .mat-form-field {
+//     width: calc(100% - 40px);
+//     /* 100% רוחב פחות 40 פיקסלים (20 פיקסלים בימין ו-20 בשמאל) */
+//     margin: 0 auto 20px;
+
+//     /* רווח בין האינפוטים */
+//     &::placeholder {
+//         color: #db2c2c;
+//         /* צבע הפלייהולדר */
+//     }
+// }
+
+// button {
+//     width: 100%;
+// }
